@@ -31,6 +31,7 @@ process = input('Choose a program from the list above (Name Only): ')
 target = input('Wanted time of operation? ')
 constant = time.perf_counter()
 
+delay = input('Delay between refreshes: ')
 print('Note: not all programs can be handled this way\n')
 time.sleep(2)
 
@@ -43,7 +44,7 @@ try:
         t = time.perf_counter()-constant
         print('Operation time is:',round(t,1))
         
-        time.sleep(.1)
+        time.sleep(delay)
 except:
     print('Not found')
   
