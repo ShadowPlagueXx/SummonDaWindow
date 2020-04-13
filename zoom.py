@@ -44,7 +44,7 @@ try:
         t = time.perf_counter()-constant
         print('Operation time is:',round(t,1))
         
-        time.sleep(delay)
+        time.sleep(float(delay))
 except:
     print('Not found')
   
